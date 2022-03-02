@@ -934,3 +934,51 @@ right: 30px;
     }
 
 /* end contact */
+/* start footer */
+.footer{
+    background: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg);
+    background-size: cover;
+    padding-top: calc(var(--main-padding) / 2);
+    padding-bottom: calc(var(--main-padding) / 2);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.footer .container{
+    position: relative;
+}
+
+.footer::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 70%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.footer p:first-of-type{
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 30px;
+    border-bottom: solid 1px;
+    width: fit-content;
+    margin: 20px auto 30px;
+}
+
+.footer .social{
+    margin-bottom: 60px;
+}
+.footer i{
+    padding: 10px 15px;
+}
+.footer span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* end footer */
