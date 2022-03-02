@@ -789,3 +789,76 @@ right: 30px;
     text-align: center;
 }
 /* end pricing */
+/* start subscribe */
+.subscribe{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-image: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/subscribe.jpg);
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+.subscribe::before{
+    content: '';
+    background-color: var(--overlay-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.subscribe .container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+@media (max-width:992px){
+    .subscribe .container{
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.subscribe form{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    width: 600px;
+}
+.subscribe form i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 25px;
+}
+.subscribe form input{
+    padding: 20px 20px 20px 60px;
+    background: transparent;
+    border: solid 1px;
+    color: white;
+    border-right: none;
+    width: 100%;
+    border-radius: 0;
+}
+.subscribe form input::placeholder{
+    color: white;
+}
+.subscribe form button{
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    background: var(--main-color);
+    border: solid 1px;
+    border-left: none;
+}
+.subscribe p{
+    margin-left: 50px;
+    line-height: 2;
+}
+@media (max-width:992px){
+    .subscribe p{
+        margin: 30px 0 0;
+    }
+}
+/* end subscribe */
