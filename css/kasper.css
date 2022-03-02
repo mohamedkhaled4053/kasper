@@ -430,3 +430,44 @@ right: 30px;
     font-weight: bold;
 }
 /* end portfolio */
+/* start video */
+.video video{
+    max-width: 100%;
+}
+.video{
+    position: relative;
+}
+.video::before{
+    content: '';
+    background-color: var(--overlay-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.video .text{
+    background-color: var(--transparent-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+}
+.video .text h3{
+    margin-bottom: 25px;
+}
+.video .text p{
+    margin-bottom: 30px;
+}
+.video .text a{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/* end video */
