@@ -249,3 +249,45 @@ right: 30px;
     }
 }
 /*end landing*/
+/* start services */
+.services{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+.services i{
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+.services h3{
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.services p{
+    color: #777;
+    line-height: 2;
+}
+
+.serbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+@media (min-width:767px){
+    .sergrid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+        grid-gap: 40px 80px;
+    }
+    .serbox{
+        margin: 0;
+        flex-direction: row;
+        text-align: start;
+    }
+    .serbox i{
+        margin-right: 40px;
+    }
+}
+/* end services */
