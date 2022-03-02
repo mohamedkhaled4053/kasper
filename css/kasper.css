@@ -699,3 +699,93 @@ right: 30px;
     margin-bottom: 20px;
 }
 /* end quote */
+/* start pricing */
+.pricing{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.pricing .plans{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.pricing .plan{
+    background-color: #fcfcfc;
+    text-align: center;
+}
+.pricing .plan .head{
+    padding: 30px 20px;
+    border-top: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
+}
+.pricing .plan .head h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.pricing .plan .head span{
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+}
+.pricing .plan .head span::before{
+    content: '$';
+    position: absolute;
+    font-size: 25px;
+    font-weight: 600;
+    left: -20px;
+}
+.pricing .plan .head span::after{
+    content: '/mo';
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: capitalize;
+    right: -57px;
+    bottom: 11px;
+    position: absolute;
+}
+
+.plan li{
+    padding: 20px;
+    position: relative;
+}
+.plan li:not(:last-child)::after{
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.plan .foot{
+    border-top: solid 1px var(--main-color);
+    border-bottom: solid 1px var(--main-color);
+}
+.plan a{
+    margin: 30px auto;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    border: solid 1px var(--main-color);
+    width: fit-content;
+}
+.pricing p{
+    margin: 50px auto 20px;
+    text-align: center;
+}
+.pricing .contact-link{
+    margin: 24px auto;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    width: fit-content;
+    background: var(--main-color);
+    text-align: center;
+}
+/* end pricing */
