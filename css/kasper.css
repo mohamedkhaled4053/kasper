@@ -491,3 +491,61 @@ right: 30px;
 }
 
 /* end about */
+/* start stat */
+.stats{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background:url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/stats.png);
+    color: white;
+    position: relative;
+    background-size: cover;
+}
+.stats::before{
+    content: '';
+    background-color: var(--overlay-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.stats .container{
+    display: flex;
+    background-color: var(--transparent-color);
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+.stats .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    flex-basis: 25%;
+    text-align: center;
+}
+@media (max-width:992px){
+    .stats .box{
+        flex-basis: 50%;
+    }
+}
+@media (max-width:768px){
+    .stats .box{
+        flex-basis: 100%;
+    }
+}
+.stats i{
+    background-color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stats .number{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* end stat */
