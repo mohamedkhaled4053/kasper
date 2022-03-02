@@ -671,3 +671,31 @@ right: 30px;
     top: -10px;
 }
 /* end our-skills */
+/* start quote */
+.quote{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+    background-image: url(https://i.pinimg.com/originals/f9/83/d9/f983d953b70e28b690ff0de1f3af4a8c.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.quote::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--overlay-color);
+    top: 0;
+    right: 0;
+}
+.quote .container{
+    position: relative;
+}
+.quote q{
+    font-size: 30px;
+    display: block;
+    margin-bottom: 20px;
+}
+/* end quote */
