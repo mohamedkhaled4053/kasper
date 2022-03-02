@@ -471,3 +471,23 @@ right: 30px;
     text-transform: uppercase;
 }
 /* end video */
+/* start about */
+.about{
+    padding-top: var(--main-padding);
+    text-align: center;
+    overflow: hidden;
+}
+.about img{
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+    max-width: 100%;
+}
+@media (max-width: 767px){
+    .about img {
+        bottom: -60px;
+        margin-top: -60px;
+    }
+}
+
+/* end about */
