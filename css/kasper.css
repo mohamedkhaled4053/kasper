@@ -169,3 +169,83 @@ nav a.active{
     }
 }
 /* end header */
+/*start landing*/
+.landing{
+    height: 100vh;
+    background-color: firebrick;
+    background: url(https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/images/landing.jpg);
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    background-color: var(--overlay-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.landing .text{
+    width: 50%;
+    background-color: var(--transparent-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing .text .cont{
+    max-width: 500px;
+}
+
+.landing .text .cont h2{
+    margin-bottom: 20px;
+    line-height: 1.8em;
+}
+.landing .text .cont p{
+    line-height: 1.5em;
+}
+.landing i{
+    color: white;
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landing i.left{
+ left: 30px;
+}
+.landing i.right{
+right: 30px;
+}
+.landing ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
+}
+.landing ul li{
+    width: 20px;
+    height: 20px;
+    border: solid white 1px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.landing ul li.active{
+    background-color: var(--main-color);
+}
+
+@media (max-width: 767px){
+    .landing .text{
+        width: 100%;
+    }    
+    .landing .text .cont{
+        max-width: 100%;
+    }
+    .landing i {
+        display: none;
+    }
+}
+/*end landing*/
