@@ -549,3 +549,125 @@ right: 30px;
     font-weight: bold;
 }
 /* end stat */
+/* start our-skills */
+.our-skills{
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+.our-skills .container{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+}
+
+
+@media (max-width:992px){
+    .our-skills .container{
+        grid-template-columns: 100%;
+        grid-gap: 0;
+    }
+}
+
+.our-skills div h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.our-skills div p{
+    color: var(--p-color);
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 2;
+}
+
+.our-skills div img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+.our-skills .content{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.our-skills .content .text{
+    line-height: 2;
+    border-bottom: solid 1px #ccc;
+}
+
+@media (max-width:768px){
+    .our-skills .content{
+        flex-direction: column;
+    }
+    .our-skills .content .text{
+        text-align: center;
+    }
+    .our-skills div img{
+        margin: 0;
+    }
+}
+
+.our-skills .content .text p{
+    color: var(--p-color);
+    text-align: end;
+    margin-bottom: 0;
+    line-height: 2;
+}
+
+.our-skills ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.our-skills ul li{
+    width: 14px;
+    height: 14px;
+    border: solid #aaa 1px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.our-skills ul li.active{
+    background-color: var(--main-color);
+}
+
+.skills .level{
+    margin-bottom: 40px;
+}
+.skills h4{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.skills .prog{
+    height: 30px;
+    background-color: #dedadc;
+}
+.skills span{
+    height: 100%;
+    background-color:var(--main-color);
+    display: block;
+    position: relative;
+}
+.skills span::before{
+    content: attr(data-progress);
+    background: black;
+    color: white;
+    padding: 6px;
+    border-radius: 4px;
+    right: -19px;
+    top: -40px;
+    position: absolute;
+}
+.skills span::after{
+    content: '';
+    border: solid 8px;
+    border-color: black transparent transparent;
+    position: absolute;
+    right: -6.5px;
+    top: -10px;
+}
+/* end our-skills */
